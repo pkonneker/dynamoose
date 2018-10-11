@@ -324,7 +324,7 @@ Dog.update({ownerId: 4, name: 'Odie'}, {$PUT: {age: 1}}, function (err) {
 
 **$ADD**
 
-Adds one or more attributes to the item. These attributes must be of the number or set type. If the attribute already exists it will be manipulated instead. If it's a number the provided value will be added mathematically to the existing value. If the attribute is a set, the provided value is appended to the set.
+Adds one or more number or set type attributes to the item. If the attribute already exists it will be manipulated instead. If it's a number the provided value will be added mathematically to the existing value. If the attribute is a set, the provided value is appended to the set.
 
 ```js
 Dog.update({ownerId: 4, name: 'Odie'}, {$ADD: {age: 1}}, function (err) {
